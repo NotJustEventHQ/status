@@ -1,31 +1,24 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# NotJustEvent's status page (status.notjustevent.com). Checks run every 5 minutes on GitHub.
+# For now these are the staging addresses; switch them to production's when it is live.
+owner: NotJustEventHQ
+repo: status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: API
+    url: https://app.notjustevent.com/health/ready
+  - name: Website
+    url: https://demo.notjustevent.com
+  - name: Admin
+    url: https://admin.notjustevent.com/sign-in
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.notjustevent.com
+  logoUrl: https://raw.githubusercontent.com/NotJustEventHQ/status/main/assets/notjustevent-logo.png
+  name: NotJustEvent status
+  introTitle: "**NotJustEvent status**"
+  introMessage: Whether the NotJustEvent website, app and admin are up, checked every five minutes.
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+    - title: NotJustEvent
+      href: https://notjustevent.com
