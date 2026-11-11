@@ -1,0 +1,94 @@
+/* NotJustEvent's look for the status page: the website's colour tokens (packages/ui/tokens/tokens.json),
+   light by default and dark when the device is, with Satoshi for text and Unbounded for headings. */
+@font-face {
+  font-family: "Satoshi";
+  src: url("/Satoshi-Variable.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+:root {
+  --body-background-color: #ffffff;
+  --body-text-color: #161214;
+  --card-background-color: #ffffff;
+  --nav-background-color: #ffffff;
+  --nav-border-bottom-color: rgba(24, 18, 21, 0.1);
+  --nav-current-border-bottom-color: #b51749;
+  --card-border-color: rgba(24, 18, 21, 0.1);
+  --down-border-left-color: #b42318;
+  --down-background-color: #fdecea;
+  --degraded-border-left-color: #c98a16;
+  --up-border-left-color: #11713a;
+  --tag-color: #ffffff;
+  --tag-up-background-color: #11713a;
+  --tag-down-background-color: #b42318;
+  --tag-degraded-background-color: #a04b00;
+  --change-background-color: #c98a16;
+  --error-button-border-color: #9a133e;
+  --error-button-background-color: #b51749;
+  --error-button-color: #ffffff;
+  --submit-button-border-color: #9a133e;
+  --submit-button-background-color: #b51749;
+  --submit-button-color: #ffffff;
+  --graph-opacity: 1;
+  --graph-filter: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-background-color: #0f0e10;
+    --body-text-color: #f3f1f2;
+    --card-background-color: #17161a;
+    --nav-background-color: #0f0e10;
+    --nav-border-bottom-color: rgba(255, 255, 255, 0.085);
+    --nav-current-border-bottom-color: #ff7da3;
+    --card-border-color: rgba(255, 255, 255, 0.085);
+    --down-border-left-color: #dc2626;
+    --down-background-color: #3a1214;
+    --degraded-border-left-color: #e2a83c;
+    --up-border-left-color: #5bcb87;
+    --tag-color: #0f0e10;
+    --tag-up-background-color: #5bcb87;
+    --tag-down-background-color: #dc2626;
+    --tag-degraded-background-color: #f0a15a;
+    --change-background-color: #e2a83c;
+    --error-button-border-color: #d91c58;
+    --error-button-background-color: #d91c58;
+    --submit-button-border-color: #d91c58;
+    --submit-button-background-color: #d91c58;
+    --graph-opacity: 0.9;
+    --graph-filter: invert(1) hue-rotate(180deg);
+  }
+}
+
+body {
+  font-family: "Satoshi", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3 {
+  font-family: "Unbounded", "Satoshi", system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+a {
+  color: #b51749;
+}
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #ff7da3;
+  }
+}
+article,
+.card {
+  border-radius: 16px;
+}
+
+/* The logo for dark backgrounds when the device is dark (the light one's words would vanish). */
+@media (prefers-color-scheme: dark) {
+  nav img,
+  header img {
+    content: url("/notjustevent-logo-dark.png");
+  }
+}

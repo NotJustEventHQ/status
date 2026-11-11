@@ -1,4 +1,5 @@
 # NotJustEvent's status page (status.notjustevent.com). Checks run every 5 minutes on GitHub.
+# Only the public services: the API and the website (no admin address here: the repo is public).
 # For now these are the staging addresses; switch them to production's when it is live.
 owner: NotJustEventHQ
 repo: status
@@ -8,15 +9,16 @@ sites:
     url: https://app.notjustevent.com/health/ready
   - name: Website
     url: https://demo.notjustevent.com
-  - name: Admin
-    url: https://admin.notjustevent.com/sign-in
 
 status-website:
   cname: status.notjustevent.com
-  logoUrl: https://raw.githubusercontent.com/NotJustEventHQ/status/main/assets/notjustevent-logo.png
+  logoUrl: /notjustevent-logo.png
   name: NotJustEvent status
+  themeUrl: /notjustevent.css
+  favicon: /favicon.png
+  customHeadHtml: '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&display=swap">'
   introTitle: "**NotJustEvent status**"
-  introMessage: Whether the NotJustEvent website, app and admin are up, checked every five minutes.
+  introMessage: Whether NotJustEvent's website and services are up, checked every five minutes.
   navbar:
     - title: Status
       href: /
