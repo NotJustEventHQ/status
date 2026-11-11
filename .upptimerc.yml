@@ -12,10 +12,10 @@ sites:
 
 status-website:
   cname: status.notjustevent.com
-  logoUrl: /notjustevent-logo.png
+  logoUrl: https://status.notjustevent.com/notjustevent-logo.png
   name: NotJustEvent status
-  themeUrl: /notjustevent.css
-  favicon: /favicon.png
+  themeUrl: https://status.notjustevent.com/notjustevent.css
+  favicon: https://status.notjustevent.com/favicon.png
   customHeadHtml: '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&display=swap">'
   introTitle: "**NotJustEvent status**"
   introMessage: Whether NotJustEvent's website and services are up, checked every five minutes.
